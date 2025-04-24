@@ -1,11 +1,15 @@
 body{
     text-align: center;
+    background-color:darkseagreen;
+    margin-top: 250px;
 }
 
 h1 {
-    color: palevioletred;
+    color: deeppink;
+    text-decoration: underline;
 }
 
 h2 {
     color: pink;
+    text-decoration: line-through;
 }
