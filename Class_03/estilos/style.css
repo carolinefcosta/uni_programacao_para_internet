@@ -13,3 +13,11 @@ h2 {
     color: pink;
     text-decoration: line-through;
 }
+
+p a {
+    color: darkslategrey;
+}
+
+a {
+    color: deeppink;
+}
