@@ -1,0 +1,13 @@
+
+.foto-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.foto {
+    width: 150px;
+}
+
+h1, h2 {
+    background-color: darkgray;
+}
