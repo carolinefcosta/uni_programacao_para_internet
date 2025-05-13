@@ -11,7 +11,7 @@ max-width: 900px;
 margin: 40px auto;
 background: #ffffffcc;
 backdrop-filter: blur(8px);
-padding: 80px;
+padding: 60px;
 border-radius: 16px;
 box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 transition: transform 0.3s ease;
@@ -27,9 +27,14 @@ transition: transform 0.3s ease;
 }
 
 .foto {
-    width: 150px;
+    width: 180px;
+    border-radius: 50%;
 }
 
 h1, h2 {
     background-color: darkgray;
+}
+
+p, li {
+    font-size: 18px;
 }
