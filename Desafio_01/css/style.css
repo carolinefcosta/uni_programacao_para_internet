@@ -1,0 +1,30 @@
+p {
+    font-size: 30px;
+}
+
+#sobre {
+    background-color: plum;
+}
+
+#projetos {
+    background-color: aquamarine;
+}
+
+#contato {
+    background-color: paleturquoise;
+}
+
+header, section {
+    display: flex;
+}
+
+
+.header_nav :hover {
+    transform: scale(1.05);
+    background-color: blanchedalmond;
+}
+
+img {
+    width: 150px;
+    border-radius: 50%;
+}
