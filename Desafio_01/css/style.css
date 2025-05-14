@@ -1,23 +1,21 @@
-p {
-    font-size: 30px;
-}
-
 #sobre {
     background-color: plum;
+    font-family:'Times New Roman', Times, serif;
 }
 
 #projetos {
     background-color: aquamarine;
+    font-family:'Times New Roman', Times, serif;
 }
 
 #contato {
     background-color: paleturquoise;
+    font-family:'Times New Roman', Times, serif;
 }
 
-header, section {
+.header_nav, section {
     display: flex;
 }
-
 
 .header_nav :hover {
     transform: scale(1.05);
