@@ -1,28 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header_nav {
+    background-color: rgba(0, 0, 0, 0.685);
+    padding: 10px 20px;
+    position: fixed;
+    width: 1000vh;
+}
+
+.header_nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.header_nav a:hover {
+    transform: scale(1.05);
+    background-color: blanchedalmond;
+    color: black;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
 #sobre {
-    background-color: plum;
-    font-family:'Times New Roman', Times, serif;
+    background-color: bisque;
+    
 }
 
 #projetos {
-    background-color: aquamarine;
-    font-family:'Times New Roman', Times, serif;
+    background-color: rgba(221, 160, 221, 0.705);
 }
 
 #contato {
-    background-color: paleturquoise;
-    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(238, 148, 178);
+    text-decoration: none;
 }
 
-.header_nav, section {
-    display: flex;
-}
-
-.header_nav :hover {
-    transform: scale(1.05);
-    background-color: blanchedalmond;
+#contato a {
+    color: black;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 25px;
 }
 
 img {
     width: 150px;
     border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Lista de projetos */
+#projetos ul {
+    list-style: none;
+    padding: 0;
+}
+
+#projetos li {
+    margin: 10px 0;
+}
+
+/* Responsividade simples */
+@media (max-width: 600px) {
+    .header_nav nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    img {
+        width: 100px;
+    }
 }
