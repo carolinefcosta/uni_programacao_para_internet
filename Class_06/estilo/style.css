@@ -2,24 +2,22 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   color: #111;
-  text-align: center;
   margin: 0;
   padding: 20px;
 }
 
 h1 {
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .produto {
-  background-color: #333200;
+  background-color: black;
   color: #fff;
-  margin: 20px auto;
-  padding: 20px;
+  padding: 20px 20px;
   border-radius: 4px;
-  max-width: 600px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  text-align: justify;
+  margin: 20px 20px;
 }
 
 h2 {
@@ -43,4 +41,11 @@ button {
 
 button:hover {
   background-color: #e6ad00;
+}
+
+img {
+  width: 300px;
+  border-radius: 150px;
+  margin-left: 70%;
+  margin-top: -100px;
 }
