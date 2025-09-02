@@ -32,7 +32,17 @@ INSERT INTO clientes (id, nome, email)
     VALUES (1, 'Maria', 'maria@email.com'),
         (2, 'João', 'joao@email.com');
 
-INSERT INTO compras (id, client_id, produto_id, data) 
-    VALUES (1, 2, 1, '2049-01-01'),
-        (2, 1, 2, '2049-01-02'),
-        (1, 2, 3, '2049-01-03');
+INSERT INTO compras (id, cliente_id,produto_id, data)
+ VALUES (1, 2, 1, '2049-01-01');
+
+INSERT INTO compras (id, cliente_id,produto_id, data)
+ VALUES (2, 1, 2, '2049-01-02');
+
+INSERT INTO compras (id, cliente_id,produto_id, data)
+ VALUES (3, 2, 3, '2049-01-03');
+
+SELECT * FROM produtos;
+
+SELECT nome FROM produtos;
+
+SELECT * FROM compras WHERE cliente_id = 2;
