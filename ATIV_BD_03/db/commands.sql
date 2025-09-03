@@ -12,13 +12,16 @@ CREATE TABLE clientes (
 );
 
 CREATE TABLE compras (
-    id INTEGER NOT NULL,
+    id INTEGER NOT NULL PRIMARY KEY,
     cliente_id INTEGER NOT NULL,
     produto_id INTEGER NOT NULL,
-    data TEXT NOT NULL
+    data TEXT NOT NULL,
+
+    FOREIGN KEY(cliente_id) REFERENCES clientes(id)
+    FOREIGN KEY(produto_id) REFERENCES produtos(id)
 
 );
-
+ 
 DROP TABLE clientes;
 DROP TABLE compras;
 DROP TABLE produtos;
@@ -46,3 +49,5 @@ SELECT * FROM produtos;
 SELECT nome FROM produtos;
 
 SELECT * FROM compras WHERE cliente_id = 2;
+
+SELECT rowid, * FROM produtos;
